@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>left-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="left-arrow" fill="#E7C296">
+            <polygon id="Path" points="213.675 255.998 298.667 304.574 298.667 207.422"></polygon>
+            <path d="M256,0 C114.837,0 0,114.837 0,256 C0,397.163 114.837,512 256,512 C397.163,512 512,397.163 512,256 C512,114.837 397.163,0 256,0 Z M341.334,341.333 L341.333,341.333 C341.333,348.928 337.301,355.968 330.709,359.786 C327.402,361.706 323.712,362.666 320,362.666 C316.352,362.666 312.683,361.727 309.419,359.85 L160.086,274.517 C153.43,270.72 149.334,263.658 149.334,256 C149.334,248.342 153.43,241.28 160.086,237.483 L309.419,152.15 C316.011,148.374 324.139,148.395 330.71,152.214 C337.302,156.033 341.334,163.073 341.334,170.667 L341.334,341.333 Z" id="Shape" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
