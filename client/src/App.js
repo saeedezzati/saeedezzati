@@ -48,8 +48,8 @@ const theme = createMuiTheme({
             default: "#29344b"
         },
         divider: "rgba(0, 0, 0, 0.12)",
-        textShadow: "0 0 50px #FA1C16, 0 0 20px #FA1C16, 0 0 30px #FA1C16, 0 0 10vw #FA1C16, 0 0 20px #FED128, 5px 5px 0px #806914",
-        iconShadow: "drop-shadow(0 0 5px #FA1C16) drop-shadow(0 0 10px #FA1C16) drop-shadow(0 0 200px #FED128) drop-shadow(0 0 0px #806914)"
+        textShadow: "0 0 50px #FA1C16, 0 0 20px #FA1C16, 0 0 30px #FA1C16, 0 0 10px #FA1C16, 0 0 20px #FED128, 5px 5px 0px #806914",
+        iconShadow: "drop-shadow(0 0 5px #FA1C16) drop-shadow(0 0 10px #FA1C16) drop-shadow(0 0 100px #FED128) drop-shadow(0 0 0px #806914)"
     }
     // breakpoints: {
     // 	values: {xxs:0, xs:320, sm:600, md:960, lg:1280, xl:1440, xxl:1920},

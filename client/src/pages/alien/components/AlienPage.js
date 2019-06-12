@@ -71,6 +71,10 @@ const styles = theme => ({
     flicker: {
         animation: "$flicker 6s infinite step-end"
     },
+    buttonWrapper: {
+        width: 100,
+        height: 100
+    },
     restart: {
         width: 64,
         height: 64,
@@ -183,7 +187,7 @@ class AlienPage extends Component {
         }
     }
     render() {
-        const { classes } = this.props;
+        const { classes, theme } = this.props;
         const { targetValue, level, hardness, gameOver, started } = this.state;
 
         return (
@@ -208,11 +212,11 @@ class AlienPage extends Component {
                                 G<span className={classes.flicker}>A</span>M<span className={classes.flicker}>E</span>&nbsp;&nbsp;OVE<span className={classes.flicker}>R</span>
                             </Grid>
                             <Grid item container spacing={0} justify={"space-evenly"} alignItems={"center"} className={classes.endGameButtons}>
-                                <IconButton aria-label="Restart" onClick={this.handleRestartClick}>
-                                    <RestartIcon viewBox={"0 0 512 512"} className={classes.restart} />
+                                <IconButton aria-label="Restart" onClick={this.handleRestartClick} className={classes.buttonWrapper}>
+                                    <RestartIcon viewBox={"0 0 512 512"} className={classes.restart} fill={theme.palette.primary.main} />
                                 </IconButton>
-                                <IconButton component={Link} to={"/"} aria-label="Exit" onClick={this.handleExitClick}>
-                                    <ExitIcon viewBox={"0 0 512 512"} className={classes.exit} />
+                                <IconButton component={Link} to={"/"} aria-label="Exit" onClick={this.handleExitClick} className={classes.buttonWrapper}>
+                                    <ExitIcon viewBox={"0 0 512 512"} className={classes.exit} fill={theme.palette.primary.main}/>
                                 </IconButton>
                             </Grid>
                         </Grid>

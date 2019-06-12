@@ -12,16 +12,17 @@ const styles = theme => ({
         userSelect: "none"
     },
     flashWrapper: {
-        height: 80,
-        width: 80,
+        height: 100,
+        width: 100,
+        padding: theme.spacing(1),
         cursor: "default",
         animation: "$flicker 6s infinite step-end",
-        filter: theme.palette.iconShadow,
         "&:hover": {
             backgroundColor: "transparent"
         }
     },
     flash: {
+        filter: theme.palette.iconShadow,
         height: 80,
         width: 80
     },
@@ -75,11 +76,11 @@ class HomePage extends Component {
     }
 
     render() {
-        const { classes } = this.props;
+        const { classes, theme } = this.props;
         return (
             <Grid container spacing={0} justify={"center"} alignItems={"center"} className={classes.root}>
                 <IconButton disableRipple ref={this.logoNode} onClick={this.handleFlashClick} className={classes.flashWrapper}>
-                    <LogoIcon viewBox={"0 0 512 512"} className={classes.flash} />
+                    <LogoIcon viewBox={"0 0 512 512"} className={classes.flash} fill={theme.palette.primary.main}/>
                 </IconButton>
             </Grid>
         );
