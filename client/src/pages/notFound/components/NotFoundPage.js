@@ -12,8 +12,8 @@ const styles = theme => ({
     },
     mainColumn: {
         width: "100%",
-        height: 1000,
-        fontSize: 220,
+        height: "100vh",
+        fontSize: "calc(10em + 10vw)",
         fontFamily: "Monoton",
         textShadow: theme.palette.textShadow,
         color: theme.palette.primary.main
