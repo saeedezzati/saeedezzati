@@ -10,7 +10,9 @@ aws s3 sync ./build s3://saeedezzati.com/ --exclude "*.br" --exclude "*.gz" --ex
 aws s3 sync ./build s3://saeedezzati.com/ --exclude "*" --include "*.js.gz" --content-type "application/javascript" --content-encoding "gzip" --cache-control "max-age=31536000"
 aws s3 sync ./build s3://saeedezzati.com/ --exclude "*" --include "*.js.br" --content-type "application/x-compressed" --content-encoding "br" --cache-control "max-age=31536000"
 aws s3 sync ./build s3://saeedezzati.com/ --exclude "*" --include "*.html.gz" --content-type "text/html" --content-encoding "gzip" --cache-control "max-age=31536000"
-aws s3 sync ./build s3://saeedezzati.com/ --exclude "*" --include "*.html.br" --content-type "text/html" --content-encoding "gzip" --cache-control "max-age=31536000"
+aws s3 sync ./build s3://saeedezzati.com/ --exclude "*" --include "*.html.br" --content-type "text/html" --content-encoding "br" --cache-control "max-age=31536000"
+aws s3 sync ./build s3://saeedezzati.com/ --exclude "*" --include "*.css.gz" --content-type "text/css" --content-encoding "gzip" --cache-control "max-age=31536000"
+aws s3 sync ./build s3://saeedezzati.com/ --exclude "*" --include "*.css.br" --content-type "text/css" --content-encoding "br" --cache-control "max-age=31536000"
 aws s3 sync ./build s3://saeedezzati.com/ --exclude "*" --include "*.json")
 echo "👉 New https://saeedezzati.com is deployed 🍭🍭"
 
